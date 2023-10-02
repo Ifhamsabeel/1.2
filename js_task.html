@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Methods</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+        background-color: aliceblue;
+    }
+
+    h1{
+        color: #000000;
+    }
+
+    h2{
+       font-size: 24px;
+    }
+
+    h5{
+        font-size: 18px;
+        color: #FF0000
+    }
+    
+    li{
+        font-size: 16px;
+    }
+    
+
+  </style>
+  <body>
+    <h1>The following methods have been implemented</h1>
+    <h5>All the method implementations are done in console</h3>
+    <h2>a. String methods</h2>
+    <ol>
+      <li>String length</li>
+      <li>To uppercase</li>
+      <li>To lowercase</li>
+      <li>Substring</li>
+      <li>Replace</li>
+    </ol>
+    <h2>b. Number methods</h2>
+    <ol>
+      <li>To fixed</li>
+      <li>Parse float</li>
+      <li>Absolute value</li>
+      <li>Minimum</li>
+      <li>Maximum</li>
+    </ol>
+    <h2>c. Array methods</h2>
+    <ol>
+      <li>Push</li>
+      <li>Pop</li>
+      <li>Join</li>
+      <li>IndexOf</li>
+      <li>Slice</li>
+    </ol>
+    <h2>d. Date methods</h2>
+    <ol>
+      <li>Get full year</li>
+      <li>Get month (0-11)</li>
+      <li>Get date (day of the month)</li>
+      <li>Get day (0-6, 0=Sunday, 6=Saturday)</li>
+      <li>Get time (milliseconds)</li>
+    </ol>
+
+    <h2>e. Function methods</h2>
+    <ol>
+      <li>Greet function to say hello</li>
+      <li>Greet function to say goodbye</li>
+    </ol>
+
+    <script>
+      // a. String methods
+      let text = "Hello, World!";
+      console.log("Original String:", text);
+
+      // 1. String length
+      console.log("Length:", text.length);
+
+      // 2. To uppercase
+      console.log("Uppercase:", text.toUpperCase());
+
+      // 3. To lowercase
+      console.log("Lowercase:", text.toLowerCase());
+
+      // 4. Substring
+      console.log("Substring:", text.substring(0, 5));
+
+      // 5. Replace
+      console.log("Replace:", text.replace("World", "Universe"));
+
+      // b. Number methods
+      let num = 42;
+      console.log("Original Number:", num);
+
+      // 1. To fixed
+      console.log("Fixed:", num.toFixed(2));
+
+      // 2. Parse float
+      let floatNum = "3.14";
+      console.log("Parsed Float:", parseFloat(floatNum));
+
+      // 3. Absolute value
+      console.log("Absolute Value:", Math.abs(-5));
+
+      // 4. Minimum
+      console.log("Minimum:", Math.min(10, 5, 20));
+
+      // 5. Maximum
+      console.log("Maximum:", Math.max(10, 5, 20));
+
+      // c. Array methods
+      let fruits = ["apple", "banana", "cherry", 1, 2, 3];
+
+      // 1. Push
+      fruits.push("orange");
+      console.log("Pushed:", fruits);
+
+      // 2. Pop
+      fruits.pop();
+      console.log("Popped:", fruits);
+
+      // 3. Join
+      let joinedFruits = fruits.join(", ");
+      console.log("Joined:", joinedFruits);
+
+      // 4. IndexOf
+      console.log("Index of 'banana':", fruits.indexOf("banana"));
+
+      // 5. Slice
+      let slicedFruits = fruits.slice(1, 4);
+      console.log("Sliced:", slicedFruits);
+
+      // d. Date methods
+      let today = new Date();
+
+      // 1. Get full year
+      console.log("Full Year:", today.getFullYear());
+
+      // 2. Get month (0-11)
+      console.log("Month:", today.getMonth());
+
+      // 3. Get date (day of the month)
+      console.log("Date:", today.getDate());
+
+      // 4. Get day (0-6, 0=Sunday, 6=Saturday)
+      console.log("Day:", today.getDay());
+
+      // 5. Get time
+      console.log("Time:", today.getTime());
+
+      // e. Function methods
+      function greet(name) {
+        console.log(`Hello, ${name}!`);
+      }
+
+      function greet2(firstName, lastName) {
+        let name = firstName + " " + lastName;
+        console.log(`Goodbye, ${name}!`);
+      }
+
+      // 1. Calling Greet function
+      greet("John");
+
+      // 2. Calling Greet function with arguments
+      greet2("John", "Doe");
+    </script>
+  </body>
+</html>
